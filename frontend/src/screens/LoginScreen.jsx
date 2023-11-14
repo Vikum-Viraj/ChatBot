@@ -23,7 +23,7 @@ const LoginScreen = () => {
       if(userInfo) {
         navigate('/')
       }
-    },[navigate,userInfo])
+    },[navigate,userInfo]) //execute the useEffect when changing variables in array
 
     const submitHandler = async (e) => {
         e.preventDefault();
